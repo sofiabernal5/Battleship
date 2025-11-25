@@ -23,7 +23,7 @@ class BoardViewPanel extends JPanel implements ActionListener, ItemListener{
 
     public BoardViewPanel(){
         // 11x11 grid to include row and column labels
-        gridLayout = new GridLayout(10, 10);
+        gridLayout = new GridLayout(11, 11);
         setLayout(gridLayout);
 
         // Top-left corner (empty space)
@@ -31,21 +31,21 @@ class BoardViewPanel extends JPanel implements ActionListener, ItemListener{
         add(corner);
 
         // Add column numbers (1-10)
-        for(int col = 1; col <= 9; col++){
+        for(int col = 1; col <= 10; col++){
             JLabel colLabel = new JLabel(String.valueOf(col), SwingConstants.CENTER);
             colLabel.setFont(new Font("Arial", Font.BOLD, 12));
             add(colLabel);
         }
 
         // Add rows with letter labels and radio buttons
-        for(int row = 0; row < 9; row++){
-            // Add row letter (A-I)
+        for(int row = 0; row < 10; row++){
+            // Add row letter (A-J)
             JLabel rowLabel = new JLabel(ROW_LABELS[row], SwingConstants.CENTER);
             rowLabel.setFont(new Font("Arial", Font.BOLD, 12));
             add(rowLabel);
 
             // Add radio buttons for this row
-            for(int col = 0; col < 9; col++){
+            for(int col = 0; col < 10; col++){
                 JRadioButton rb = new JRadioButton();
                 rb.addItemListener(this);
                 add(rb);

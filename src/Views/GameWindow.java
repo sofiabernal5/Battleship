@@ -25,7 +25,7 @@ class GameWindowPanel extends JPanel implements ActionListener, ItemListener {
     private BoardViewPanel boardViewPanel;
 
     private JButton moveButton = new JButton("Taken Pieces 1");
-    private JButton moveButton2 = new JButton("Move2");
+    private JButton moveButton2 = new JButton("Move 2");
     private JButton moveButton3 = new JButton("Player 2");
     private JButton moveButton4 = new JButton("Player 1");
     private JButton moveButton5 = new JButton("Taken Piece 2");
