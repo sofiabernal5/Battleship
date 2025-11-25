@@ -11,9 +11,9 @@ public class BoardModel {
     private CellState[][] boardArray;
 
     public BoardModel(){
-        boardArray = new CellState[9][9];
-        for (int row = 0; row < 9; row++) {
-            for (int col = 0; col < 9; col++) {
+        boardArray = new CellState[10][10];
+        for (int row = 1; row < 11; row++) {
+            for (int col = 1; col < 11; col++) {
                 boardArray[row][col] = CellState.EMPTY;
             }
         }

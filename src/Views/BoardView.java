@@ -21,9 +21,9 @@ class BoardViewPanel extends JPanel implements ActionListener, ItemListener{
     private GridLayout gridLayout;
 
     public BoardViewPanel(){
-        gridLayout = new GridLayout(9,9);
+        gridLayout = new GridLayout(10,10);
         setLayout( gridLayout );
-        for(int i = 0; i<81; i++){
+        for(int i = 1; i<101; i++){
             JRadioButton rb = new JRadioButton(" " + i);
             rb.addItemListener(this);
             add(rb);
